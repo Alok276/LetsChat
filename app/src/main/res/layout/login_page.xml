@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundlogin"
+    tools:context=".login">
+
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="60mm"
+        android:layout_height="50mm"
+        android:src="@mipmap/login"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/arbutus"
+        android:isScrollContainer="true"
+        android:text="LOGIN"
+        android:textColor="#FFFF"
+        android:textSize="30dp" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="@string/label"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="6dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/country_code"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:id="@+id/mobileText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outlinedTextField"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

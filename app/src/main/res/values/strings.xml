@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LetsChat</string>
+    <string name="label">Mobile number</string>
+    <string name="country_code">+91</string>
+    <string name="login">LOGIN</string>
+    <string name="auOtp">SUBMIT</string>
+    <string name="homeButton">SUBMIT</string>
+</resources>
